@@ -1,0 +1,8 @@
+.slider {
+    background: url('../images/slider/slider-bg.jpg');
+    background-position: top center;
+    background-size: cover;
+    .slider-overlay {
+        background: linear-gradient(90deg, rgba(50, 55, 143, 0.74), rgba(34, 160, 238, 0.9));
+    }
+}

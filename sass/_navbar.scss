@@ -1,0 +1,85 @@
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.479);
+    nav {
+        .navbar-brand {
+            img {
+                width: 188px;
+                transition: .5s;
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .navbar-brand {
+                img {
+                    width: 100px;
+                }
+            }
+        }
+        .navbar-toggler {
+            border-color: $primary !important;
+            span {
+                color: $primary;
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: black;
+                    padding: 0px 18px;
+                    position: relative;
+                    transition: .3s;
+                }
+                .nav-link:hover {
+                    color: $primary;
+                }
+                .nav-link:before {
+                    content: '';
+                    border: 1px solid gray;
+                    position: absolute;
+                    left: -4px;
+                    height: 18px;
+                    margin-top: 4px;
+                }
+            }
+            .nav-item:last-child {
+                .nav-link {
+                    border-radius: 3px;
+                    border: 2px solid $primary;
+                    background-color: $primary;
+                    color: white;
+                }
+            }
+            .nav-item:first-child,
+            .nav-item:last-child {
+                .nav-link:before {
+                    border: none;
+                }
+            }
+        }
+        @media screen and (max-width:992px) {
+            .navbar-nav {
+                margin-top: 15px;
+                .nav-item {
+                    margin-top: 5px;
+                    .nav-link {
+                        background-color: transparent !important;
+                        color: black !important;
+                        border: none !important;
+                    }
+                    .nav-link:hover {
+                        background-color: $primary !important;
+                        color: white !important;
+                        padding-left: 30px;
+                    }
+                    .nav-link:before {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.small-navbar-img {
+    width: 100px !important;
+}

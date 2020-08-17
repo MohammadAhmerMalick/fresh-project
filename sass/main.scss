@@ -1,0 +1,18 @@
+// $primary :#fff;
+// $secondary :#fff;
+$FRB: Roboto-Bold;
+$FRM: Roboto-Medium;
+$FRR: Roboto-Regular;
+$FRL: Roboto-Light;
+// bootstrap
+@import "../vender/bootstrap-4.5.0/scss/bootstrap.scss";
+// owl carousle
+@import "../vender/OwlCarousel2-2.3.4/src/scss/owl.carousel.scss";
+@import "../vender/OwlCarousel2-2.3.4/src/scss/owl.theme.default.scss";
+// font-family
+@import "font-family";
+// main
+@import "layout";
+@import "navbar";
+@import "slider";
+@import "footer";
